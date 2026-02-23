@@ -58,13 +58,13 @@ REQUEST_DELAY = 5   #Seconds between requests so I do not get blocked by Underst
 PLAYER_RENAME = {
     "player_name": "player",
     "team_title":  "team",
-    "time":        "minutes",
-    "npg":         "non_penalty_goals",
-    "npxG":        "npxg",
-    "xG":          "xg",
-    "xA":          "xa",
-    "xGChain":     "xg_chain",
-    "xGBuildup":   "xg_buildup",}
+    "time":        "minutes", 
+    "npg":         "non_penalty_goals", #Scoring in the 'run of play'
+    "npxG":        "npxg", #Non-penalty expected goals
+    "xG":          "xg", #Expected goals
+    "xA":          "xa", #Expected assits 
+    "xGChain":     "xg_chain", 
+    "xGBuildup":   "xg_buildup",} #Last two measure how involved a given player is in the build up to a shot
 
 #Columns of numeric data, which will be converted to numeric types for calculations (per 90 stats)
 PLAYER_NUMERIC = [
@@ -96,7 +96,7 @@ def build_players_df(raw: list, league: str, season: int) -> pd.DataFrame:
     data["xg_overperformance"] = (data["goals"] - data["xg"]).round(3)
 
 #What season & league are we looking @
-    data["league"]       = LEAGUES[league]
+    data["league"] = LEAGUES[league]
     data["season"] = f"{season}/{str(season + 1)[-2:]}"
 
     data = data[data["minutes"] > 0].reset_index(drop=True) #Get rid of the bums (they are miles better than me in every facet of soccer) who did not play during the given season
@@ -118,8 +118,9 @@ def build_teams_df(raw: dict, league: str, season: int) -> pd.DataFrame:
         losses = sum(1 for m in history if m.get("loses") == 1)
         gf     = sum(float(m.get("scored", 0)) for m in history) #Goals for metric 
         ga     = sum(float(m.get("missed", 0)) for m in history) #Goals allowed
-        xg     = sum(float(m.get("xG",     0)) for m in history) #Expected goals (0 - 1 scale taking into a crap ton of variables to measure it)
-        xga    = sum(float(m.get("xGA",    0)) for m in history) #Expected goals allowed
+        xg     = sum(float(m.get("xG",     0)) for m in history) #Add up the expected goals 
+        #Each shot is on a 0 - 1 scale taking into a crap ton of variables to measure it
+        xga    = sum(float(m.get("xGA",    0)) for m in history) #Sum up the expected goals allowed
         #Round a few things and do some calculations to make this look a little pretty 
         rows.append({
             "team":           info.get("title", "Unknown"),
@@ -131,16 +132,16 @@ def build_teams_df(raw: dict, league: str, season: int) -> pd.DataFrame:
             "goals_conceded": int(ga),
             "goal_diff":      int(gf - ga),
             "points":         wins * 3 + draws, #3 pts for a win & 1 pt for a draw (not sure if that is common knowledge, but just in case...)
-            "xg":             round(xg,  2),
+            "xg":             round(xg,  2), #Round so these are not disgusting to look at 
             "xga":            round(xga, 2),
-            "xg_diff":        round(xg - xga, 2),})
+            "xg_diff":        round(xg - xga, 2),}) 
 
 #Build the dataframe and let's see if it is empty (that will be so upsetting)
     clean_data = pd.DataFrame(rows)
     if clean_data.empty:
         return clean_data
 
-#Sort the teams by pts, goal diff and goals scored (that is the tie breaker system if teams are tied on points)
+#Sort the teams by pts, goal diff and goals scored (that is the tie breaker system [determines league position] if teams are tied on points)
     sorted = clean_data.sort_values(
         ["points", "goal_diff", "goals_scored"],
         ascending=[False, False, False]
