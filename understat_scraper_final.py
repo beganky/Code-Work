@@ -37,10 +37,10 @@ Leagues = {
     "EPL":         "Premier League",
     "Bundesliga":  "Bundesliga",
     "Serie_A":     "Serie A",
-    "Ligue_1":     "Ligue 1"}
-
+    "Ligue_1":     "Ligue 1",
+    "La_liga":      "La liga"}
     #I swear this should have been La Ligas
-#    "La_Liga":     "La Liga" but it did not work despite that being the url 
+#    "La_liga":     "La Liga" but it did not work despite that being the url 
 #https://understat.com/league/La_liga I swear that takes you right to the page... do not get me started.
 #I spent five days trying to pull data from the 2014 season in the Premier League and figured out that xG and xA data did not exist back then... please do not ask how awesome I felt figuring that out
 #La Liga (Spain's first division) is also not included, because the scraper kept breaking or claiming the pages did not exist... even though I was staring at them in my browser
@@ -85,8 +85,8 @@ def build_players_df(raw: list, league: str, season: int) -> pd.DataFrame:
     ugly_data = here_we_go[[c for c in keep if c in here_we_go.columns]]
 
     for col in Player_stat_cols:
-        if col in data.columns:
-            data[col] = pd.to_numeric(data[col], errors="coerce")
+        if col in ugly_data.columns:
+            ugly_data[col] = pd.to_numeric(ugly_data[col], errors="coerce")
 
 #Per 90 stats that are calculated w/raw data then converted to per 90 w/rounding so my data is not disgusting.
     mins = ugly_data["minutes"].replace(0, np.nan)

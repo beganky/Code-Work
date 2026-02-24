@@ -1,0 +1,97 @@
+2026-02-24 16:36:27,043 [INFO] ============================================================
+2026-02-24 16:36:27,044 [INFO] Understat Scraper — Players + Team Standings
+2026-02-24 16:36:27,044 [INFO] Leagues : ['EPL', 'Bundesliga', 'Serie_A', 'Ligue_1', 'La_liga']
+2026-02-24 16:36:27,044 [INFO] Seasons : ['2015/16', '2016/17', '2017/18', '2018/19', '2019/20', '2020/21', '2021/22', '2022/23', '2023/24']
+2026-02-24 16:36:27,046 [INFO] ============================================================
+2026-02-24 16:36:27,047 [INFO] [1/45] Premier League — 2015/16
+2026-02-24 16:36:27,892 [ERROR] Failed for EPL 2015/16: name 'data' is not defined get back to work.
+2026-02-24 16:36:27,892 [INFO] [2/45] Premier League — 2016/17
+2026-02-24 16:36:28,077 [ERROR] Failed for EPL 2016/17: name 'data' is not defined get back to work.
+2026-02-24 16:36:28,078 [INFO] [3/45] Premier League — 2017/18
+2026-02-24 16:36:28,261 [ERROR] Failed for EPL 2017/18: name 'data' is not defined get back to work.
+2026-02-24 16:36:28,262 [INFO] [4/45] Premier League — 2018/19
+2026-02-24 16:36:28,446 [ERROR] Failed for EPL 2018/19: name 'data' is not defined get back to work.
+2026-02-24 16:36:28,446 [INFO] [5/45] Premier League — 2019/20
+2026-02-24 16:36:28,629 [ERROR] Failed for EPL 2019/20: name 'data' is not defined get back to work.
+2026-02-24 16:36:28,630 [INFO] [6/45] Premier League — 2020/21
+2026-02-24 16:36:28,811 [ERROR] Failed for EPL 2020/21: name 'data' is not defined get back to work.
+2026-02-24 16:36:28,812 [INFO] [7/45] Premier League — 2021/22
+2026-02-24 16:36:28,992 [ERROR] Failed for EPL 2021/22: name 'data' is not defined get back to work.
+2026-02-24 16:36:28,993 [INFO] [8/45] Premier League — 2022/23
+2026-02-24 16:36:29,169 [ERROR] Failed for EPL 2022/23: name 'data' is not defined get back to work.
+2026-02-24 16:36:29,170 [INFO] [9/45] Premier League — 2023/24
+2026-02-24 16:36:29,366 [ERROR] Failed for EPL 2023/24: name 'data' is not defined get back to work.
+2026-02-24 16:36:29,366 [INFO] [10/45] Bundesliga — 2015/16
+2026-02-24 16:36:29,747 [ERROR] Failed for Bundesliga 2015/16: name 'data' is not defined get back to work.
+2026-02-24 16:36:29,747 [INFO] [11/45] Bundesliga — 2016/17
+2026-02-24 16:36:30,125 [ERROR] Failed for Bundesliga 2016/17: name 'data' is not defined get back to work.
+2026-02-24 16:36:30,126 [INFO] [12/45] Bundesliga — 2017/18
+2026-02-24 16:36:30,550 [ERROR] Failed for Bundesliga 2017/18: name 'data' is not defined get back to work.
+2026-02-24 16:36:30,551 [INFO] [13/45] Bundesliga — 2018/19
+2026-02-24 16:36:31,029 [ERROR] Failed for Bundesliga 2018/19: name 'data' is not defined get back to work.
+2026-02-24 16:36:31,030 [INFO] [14/45] Bundesliga — 2019/20
+2026-02-24 16:36:31,637 [ERROR] Failed for Bundesliga 2019/20: name 'data' is not defined get back to work.
+2026-02-24 16:36:31,638 [INFO] [15/45] Bundesliga — 2020/21
+2026-02-24 16:36:31,823 [ERROR] Failed for Bundesliga 2020/21: name 'data' is not defined get back to work.
+2026-02-24 16:36:31,824 [INFO] [16/45] Bundesliga — 2021/22
+2026-02-24 16:36:31,997 [ERROR] Failed for Bundesliga 2021/22: name 'data' is not defined get back to work.
+2026-02-24 16:36:31,997 [INFO] [17/45] Bundesliga — 2022/23
+2026-02-24 16:36:32,172 [ERROR] Failed for Bundesliga 2022/23: name 'data' is not defined get back to work.
+2026-02-24 16:36:32,172 [INFO] [18/45] Bundesliga — 2023/24
+2026-02-24 16:36:32,352 [ERROR] Failed for Bundesliga 2023/24: name 'data' is not defined get back to work.
+2026-02-24 16:36:32,354 [INFO] [19/45] Serie A — 2015/16
+2026-02-24 16:36:32,946 [ERROR] Failed for Serie_A 2015/16: name 'data' is not defined get back to work.
+2026-02-24 16:36:32,947 [INFO] [20/45] Serie A — 2016/17
+2026-02-24 16:36:33,531 [ERROR] Failed for Serie_A 2016/17: name 'data' is not defined get back to work.
+2026-02-24 16:36:33,532 [INFO] [21/45] Serie A — 2017/18
+2026-02-24 16:36:34,085 [ERROR] Failed for Serie_A 2017/18: name 'data' is not defined get back to work.
+2026-02-24 16:36:34,086 [INFO] [22/45] Serie A — 2018/19
+2026-02-24 16:36:34,690 [ERROR] Failed for Serie_A 2018/19: name 'data' is not defined get back to work.
+2026-02-24 16:36:34,696 [INFO] [23/45] Serie A — 2019/20
+2026-02-24 16:36:35,324 [ERROR] Failed for Serie_A 2019/20: name 'data' is not defined get back to work.
+2026-02-24 16:36:35,325 [INFO] [24/45] Serie A — 2020/21
+2026-02-24 16:36:35,504 [ERROR] Failed for Serie_A 2020/21: name 'data' is not defined get back to work.
+2026-02-24 16:36:35,504 [INFO] [25/45] Serie A — 2021/22
+2026-02-24 16:36:35,687 [ERROR] Failed for Serie_A 2021/22: name 'data' is not defined get back to work.
+2026-02-24 16:36:35,688 [INFO] [26/45] Serie A — 2022/23
+2026-02-24 16:36:35,876 [ERROR] Failed for Serie_A 2022/23: name 'data' is not defined get back to work.
+2026-02-24 16:36:35,876 [INFO] [27/45] Serie A — 2023/24
+2026-02-24 16:36:36,059 [ERROR] Failed for Serie_A 2023/24: name 'data' is not defined get back to work.
+2026-02-24 16:36:36,059 [INFO] [28/45] Ligue 1 — 2015/16
+2026-02-24 16:36:36,505 [ERROR] Failed for Ligue_1 2015/16: name 'data' is not defined get back to work.
+2026-02-24 16:36:36,506 [INFO] [29/45] Ligue 1 — 2016/17
+2026-02-24 16:36:36,953 [ERROR] Failed for Ligue_1 2016/17: name 'data' is not defined get back to work.
+2026-02-24 16:36:36,953 [INFO] [30/45] Ligue 1 — 2017/18
+2026-02-24 16:36:37,397 [ERROR] Failed for Ligue_1 2017/18: name 'data' is not defined get back to work.
+2026-02-24 16:36:37,398 [INFO] [31/45] Ligue 1 — 2018/19
+2026-02-24 16:36:37,826 [ERROR] Failed for Ligue_1 2018/19: name 'data' is not defined get back to work.
+2026-02-24 16:36:37,826 [INFO] [32/45] Ligue 1 — 2019/20
+2026-02-24 16:36:38,183 [ERROR] Failed for Ligue_1 2019/20: name 'data' is not defined get back to work.
+2026-02-24 16:36:38,183 [INFO] [33/45] Ligue 1 — 2020/21
+2026-02-24 16:36:38,367 [ERROR] Failed for Ligue_1 2020/21: name 'data' is not defined get back to work.
+2026-02-24 16:36:38,367 [INFO] [34/45] Ligue 1 — 2021/22
+2026-02-24 16:36:38,560 [ERROR] Failed for Ligue_1 2021/22: name 'data' is not defined get back to work.
+2026-02-24 16:36:38,560 [INFO] [35/45] Ligue 1 — 2022/23
+2026-02-24 16:36:38,744 [ERROR] Failed for Ligue_1 2022/23: name 'data' is not defined get back to work.
+2026-02-24 16:36:38,745 [INFO] [36/45] Ligue 1 — 2023/24
+2026-02-24 16:36:38,924 [ERROR] Failed for Ligue_1 2023/24: name 'data' is not defined get back to work.
+2026-02-24 16:36:38,926 [INFO] [37/45] La liga — 2015/16
+2026-02-24 16:36:38,926 [ERROR] Failed for La_liga 2015/16: La_ligais not a valid league get back to work.
+2026-02-24 16:36:38,927 [INFO] [38/45] La liga — 2016/17
+2026-02-24 16:36:38,927 [ERROR] Failed for La_liga 2016/17: La_ligais not a valid league get back to work.
+2026-02-24 16:36:38,927 [INFO] [39/45] La liga — 2017/18
+2026-02-24 16:36:38,927 [ERROR] Failed for La_liga 2017/18: La_ligais not a valid league get back to work.
+2026-02-24 16:36:38,927 [INFO] [40/45] La liga — 2018/19
+2026-02-24 16:36:38,927 [ERROR] Failed for La_liga 2018/19: La_ligais not a valid league get back to work.
+2026-02-24 16:36:38,928 [INFO] [41/45] La liga — 2019/20
+2026-02-24 16:36:38,928 [ERROR] Failed for La_liga 2019/20: La_ligais not a valid league get back to work.
+2026-02-24 16:36:38,928 [INFO] [42/45] La liga — 2020/21
+2026-02-24 16:36:38,928 [ERROR] Failed for La_liga 2020/21: La_ligais not a valid league get back to work.
+2026-02-24 16:36:38,929 [INFO] [43/45] La liga — 2021/22
+2026-02-24 16:36:38,929 [ERROR] Failed for La_liga 2021/22: La_ligais not a valid league get back to work.
+2026-02-24 16:36:38,929 [INFO] [44/45] La liga — 2022/23
+2026-02-24 16:36:38,929 [ERROR] Failed for La_liga 2022/23: La_ligais not a valid league get back to work.
+2026-02-24 16:36:38,930 [INFO] [45/45] La liga — 2023/24
+2026-02-24 16:36:38,930 [ERROR] Failed for La_liga 2023/24: La_ligais not a valid league get back to work.
+2026-02-24 16:36:38,932 [ERROR] No player data collected. Go fish...
+2026-02-24 16:36:38,933 [ERROR] This is broken and no team data was collected. You successfully wasted your own time!!!
