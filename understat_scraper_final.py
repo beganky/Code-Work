@@ -220,7 +220,8 @@ def run_scraper(leagues: list, seasons: list) -> tuple:
 
     return all_players, all_teams
 
-#CLI (This is where I am making sure that I have everything working)
+#CLI [Command Line Interface](This is where I am making sure that I have everything working)
+#Allows me to pull specific data instead of everything under the sun (on the page)
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -264,12 +265,12 @@ if __name__ == "__main__":
     players, teams = run_scraper(leagues=args.leagues, seasons=args.seasons)
 
 #These let me know if I messed up everything, and if they tell me I did... oh boy 
-    if not players.empty:
+    if not players.empty: #AKA if we have data saved, it will show the first 5
         print(f"\n Player sample ───────────────────────────────────────────")
         print(players[["season","league","player","team","goals","assists","xg"]].head(5).to_string(index=False))
         #Pull the first 5 players
 
-    if not teams.empty:
+    if not teams.empty: #If team data has something this will print
         print(f"\n Team standings sample ───────────────────────────────────")
         print(teams[["season","league","position","team","points","xg","xga"]].head(5).to_string(index=False))
         #Pull the first 5 teams 
