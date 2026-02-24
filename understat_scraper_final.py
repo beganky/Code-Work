@@ -38,11 +38,10 @@ Leagues = {
     "Bundesliga":  "Bundesliga",
     "Serie_A":     "Serie A",
     "Ligue_1":     "Ligue 1"}
-    #I swear this should have been La Ligas
-#    "La_liga":     "La Liga" but it did not work despite that being the url 
-#https://understat.com/league/La_liga I swear that takes you right to the page... do not get me started.
-#I spent five days trying to pull data from the 2014 season in the Premier League and figured out that xG and xA data did not exist back then... please do not ask how awesome I felt figuring that out
-#La Liga (Spain's first division) is also not included, because the scraper kept breaking or claiming the pages did not exist... even though I was staring at them in my browser
+
+#La_Liga even though that is the exact documentation name for it does not do anything but break this scraper, so I ignored that league and will work on it for future work
+#Here is the exact URL to the La Liga page, and no La_liga does not work either 
+#https://understat.com/league/La_liga 
 
 #When do I want to collect
 Seasons = list(range(2015, 2024)) #These will be at the end of the url and represent the beginning year of the season
