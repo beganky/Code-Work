@@ -10,15 +10,15 @@ Using understat.com I was able to scrape through the 2015-2025 seasons and deter
 I also wanted to collect team data in order to see who were the best performing teams throughout those 10 years. 
 
 ## Quick Note
-(Side note, 2015/2016 was the season that advanced statistics such as xG & xA were recorded [xG: Expected goal rate & xA: Expected assist rate])
-That means that if you attempt to collect 2014/2015 data my scraper will ignore that year and chug along to the next season.
+2015/2016 was the season that advanced statistics such as xG & xA were recorded (xG: Expected goal rate & xA: Expected assist rate)
+That means that if you attempt to collect 2014/2015 data my scraper will ignore that year and chug along to the next season. However, the scraper will allow you to pull through all seasons before.
 If you collect any data before 2015 all the columns with xG, xA, xDF (expected goal differential) will be empty and you would not be able to do any analysis at all. 
 So let me reiterate... you can collect data before the 2015/2016 season, but ALL of the per 90 stats that I have created will be totally empty and make it impossible to compare to the active data.
 
 
 ## What did I do
 Now that I have that off my chest...
-I was able to collect that data through quite a let's call it a fun process where I had to learn to deal with understatclient the python package. I scraped all my data from the Understat website and then created visualizations within the notebook folder that shows the top 10 best teams, players with the highest xG and the players with the most chances created (highest xA) across all four leagues.
+I was able to collect that data through quite a let's call it a fun process where I had to learn to deal with understatclient the python package. The goal was to scrape ten seasons of data for both teams and individual players for the 2015-2025 seasons and attempt to compare each team and player across the seasons. I scraped all my data from the Understat website and then created visualizations within the notebook folder that shows the top 10 best teams, players with the highest xG and the players with the most chances created (highest xA) across all four leagues. 
 
 
 ## Issues
@@ -32,6 +32,7 @@ I would love to have a model that can predict overpays from clubs solely by look
 That model would be able to assist clubs in finding when they should lock down a player to a long term contract and save money in the long run or should they take a gamble for a player who has been playing below expectations. 
 'Smaller' clubs, such as my personal favorite West Ham United, struggle to keep young emerging start players with potential as the big boys like Arsenal, Real Madrid, Man City, etc. who can throw huge contracts at multiple players per transfer window and just hope that one of them turns out to be a fit in their system. I want to try and create a model that predicts when a player is being underpaid by their current club so that teams like West Ham can go scout another striker (who inevitably flops) and sign them on a club friendly deal (our billionare owners [yes you read that right billion with a b] are much too cheap to just throw money into the air...) so that the club can invest funds into other areas of need. 
 Finally, I think if I could weigh each league based on how effective clubs from leagues are at continental I would be able to give players stats a better comparison to one another. As styles will vary from league to league and players transferring in will have to adapt to that new style. In the age of data and film, coaches will adapt play styles from game to game, so a general comparison of league to league would help me compare stats of a 33 year old Premier League (England's first division) veteran to a 19 year old playing in Serie B (Italy's second division) and see who would be worth offering a new deal to.
+
 
 
 
