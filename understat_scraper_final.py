@@ -1,7 +1,7 @@
 """
 Understat Soccer Scraper — Final Version (2015-2023)
 
-Uses the understatapi package instead of raw requests (I made five separate scrapers before I came to this realization)
+Uses the understatapi package instead of raw requests (I made two separate scrapers before I came to this realization)
 which was awesome... anyways, the package handles Understat's bot protection and helped me pull my data from Understat's website.
 
 Running this from start to finish takes around 20 minutes just a quick heads up...
