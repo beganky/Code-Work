@@ -34,6 +34,7 @@ log = logging.getLogger(__name__)
 #Here is the setup for both the leagues and seasons I want to pull data for 
 
 Leagues = {
+    "La_Liga":     "La Liga",
     "EPL":         "Premier League",
     "Bundesliga":  "Bundesliga",
     "Serie_A":     "Serie A",
@@ -50,9 +51,9 @@ Seasons = list(range(2015, 2024)) #These will be at the end of the url and repre
 Output_spot = Path("soccer_data")
 Output_spot.mkdir(exist_ok=True)
 
-REQUEST_DELAY = 5   #Seconds between requests so I do not get blocked by Understat's bot 
+REQUEST_DELAY = 12   #Seconds between requests so I do not get blocked by Understat's bot 
 #Huge pain in the butt btw especially after my nightmare trying to dance around CloudFlare 
-#Understat blocked me for having this at 3, so I stuck with 5... bc it worked... 
+#Understat blocked me for having this at 3 & 5, so I stuck with 12... bc it worked... 
 
 #Player data
 Player_cols = {
