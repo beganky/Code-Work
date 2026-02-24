@@ -35,7 +35,7 @@ log = logging.getLogger(__name__)
 
 #Here is the setup for both the leagues and seasons I want to pull data for 
 
-LEAGUES = {
+Leagues = {
     "EPL":         "Premier League",
     "Bundesliga":  "Bundesliga",
     "Serie_A":     "Serie A",
@@ -45,17 +45,17 @@ LEAGUES = {
 #La Liga (Spain's first division) is also not included, because the scraper kept breaking or claiming the pages did not exist... even though I was staring at them in my browser
 
 #When do I want to collect
-SEASONS = list(range(2015, 2024)) #These will be at the end of the url and represent the beginning year of the season
+Seasons = list(range(2015, 2024)) #These will be at the end of the url and represent the beginning year of the season
 
 #Where am I hiding the data secrets. 
-OUTPUT_DIR = Path("soccer_data")
-OUTPUT_DIR.mkdir(exist_ok=True)
+Output_spot = Path("soccer_data")
+Output_spot.mkdir(exist_ok=True)
 
 REQUEST_DELAY = 5   #Seconds between requests so I do not get blocked by Understat's bot 
 #Huge pain in the butt btw. They blocked me for having this at 3, so I stuck with 5... bc it worked... 
 
 #Player data
-PLAYER_RENAME = {
+Player_cols = {
     "player_name": "player",
     "team_title":  "team",
     "time":        "minutes", 
@@ -67,43 +67,43 @@ PLAYER_RENAME = {
     "xGBuildup":   "xg_buildup",} #Last two measure how involved a given player is in the build up to a shot
 
 #Columns of numeric data, which will be converted to numeric types for calculations (per 90 stats)
-PLAYER_NUMERIC = [
+Player_stat_cols = [
     "games", "minutes", "goals", "assists", "shots", "key_passes",
     "yellow_cards", "red_cards", "non_penalty_goals",
     "xg", "xa", "npxg", "xg_chain", "xg_buildup",]
 
 #What do I want to find in the player data and what am I keeping (save to .csv later)
 def build_players_df(raw: list, league: str, season: int) -> pd.DataFrame:
-    data = pd.DataFrame(raw).rename(columns=PLAYER_RENAME)
+    here_we_go = pd.DataFrame(raw).rename(columns=Player_cols)
 
     keep = [
         "player", "team", "position", "games", "minutes", "goals", "assists",
         "shots", "key_passes", "yellow_cards", "red_cards", "non_penalty_goals",
         "xg", "xa", "npxg", "xg_chain", "xg_buildup",]
-    data = data[[c for c in keep if c in data.columns]]
+    ugly_data = here_we_go[[c for c in keep if c in here_we_go.columns]]
 
-    for col in PLAYER_NUMERIC:
+    for col in Player_stat_cols:
         if col in data.columns:
             data[col] = pd.to_numeric(data[col], errors="coerce")
 
 #Per 90 stats that are calculated w/raw data then converted to per 90 w/rounding so my data is not disgusting.
-    mins = data["minutes"].replace(0, np.nan)
-    data["goals_per90"]        = (data["goals"]   / mins * 90).round(3)
-    data["assists_per90"]      = (data["assists"] / mins * 90).round(3)
-    data["xg_per90"]           = (data["xg"]      / mins * 90).round(3)
-    data["xa_per90"]           = (data["xa"]      / mins * 90).round(3)
-    data["goal_contributions"] = data["goals"].fillna(0) + data["assists"].fillna(0)
-    data["xg_overperformance"] = (data["goals"] - data["xg"]).round(3)
+    mins = ugly_data["minutes"].replace(0, np.nan)
+    ugly_data["goals_per90"]        = (ugly_data["goals"]   / mins * 90).round(3)
+    ugly_data["assists_per90"]      = (ugly_data["assists"] / mins * 90).round(3)
+    ugly_data["xg_per90"]           = (ugly_data["xg"]      / mins * 90).round(3)
+    ugly_data["xa_per90"]           = (ugly_data["xa"]      / mins * 90).round(3)
+    ugly_data["goal_contributions"] = ugly_data["goals"].fillna(0) + ugly_data["assists"].fillna(0)
+    ugly_data["xg_overperformance"] = (ugly_data["goals"] - ugly_data["xg"]).round(3)
 
 #What season & league are we looking @
-    data["league"] = LEAGUES[league]
-    data["season"] = f"{season}/{str(season + 1)[-2:]}"
+    ugly_data["league"] = Leagues[league]
+    ugly_data["season"] = f"{season}/{str(season + 1)[-2:]}"
 
-    data = data[data["minutes"] > 0].reset_index(drop=True) #Get rid of the bums who did not play during the given season
+    start_data = ugly_data[ugly_data["minutes"] > 0].reset_index(drop=True) #Get rid of the bums who did not play during the given season
     #Let me be clear they are miles better than me.
     front = ["season", "league", "player", "team", "position"]
-    rest  = [c for c in data.columns if c not in front]
-    return data[front + rest]
+    rest  = [c for c in start_data.columns if c not in front]
+    return start_data[front + rest]
 
 
 #Team data
@@ -149,7 +149,7 @@ def build_teams_df(raw: dict, league: str, season: int) -> pd.DataFrame:
     ).reset_index(drop=True)
     sorted.insert(0, "position", sorted.index + 1) #Remember that index starts @ 0, so add 1 to each to get actual position
 
-    sorted["league"]       = LEAGUES[league] #Looks through each league
+    sorted["league"]       = Leagues[league] #Looks through each league
     sorted["season"] = f"{season}/{str(season + 1)[-2:]}" #Looks through each season
 
     front = ["season", "league", "position", "team", "points"] #Set the order of how I want the printed table to appear
@@ -172,7 +172,7 @@ def run_scraper(leagues: list, seasons: list) -> tuple:
         for season in seasons:
             done += 1
             label = f"{season}/{str(season + 1)[-2:]}"
-            log.info(f"[{done}/{total}] {LEAGUES[league]} — {label}")
+            log.info(f"[{done}/{total}] {Leagues[league]} — {label}")
             #Let's me know what league is currently being worked on/ what has already been done
             try:
                 #Grab player data
@@ -204,7 +204,7 @@ def run_scraper(leagues: list, seasons: list) -> tuple:
     #Save all the data to individual CSVs
     if player_frames:
         all_players = pd.concat(player_frames, ignore_index=True)
-        path = OUTPUT_DIR / "player_scraped_data.csv"
+        path = Output_spot / "player_scraped_data.csv"
         all_players.to_csv(path, index=False)
         log.info(f"\n IT WORKED! player_scraped_data.csv — {len(all_players):,} rows → {path}")
     else:
@@ -213,7 +213,7 @@ def run_scraper(leagues: list, seasons: list) -> tuple:
 
     if team_frames:
         all_teams = pd.concat(team_frames, ignore_index=True)
-        path = OUTPUT_DIR / "understat_teams_data.csv"
+        path = Output_spot / "understat_teams_data.csv"
         all_teams.to_csv(path, index=False)
         log.info(f"\n IT WORKED!! understat_teams_data.csv   — {len(all_teams):,} rows → {path}")
     else:
@@ -229,17 +229,18 @@ def parse_args():
         description="Scrape Understat player + team data into CSVs (2015-2025)"
     )
     parser.add_argument(
-        "--leagues", nargs="+", choices=list(LEAGUES.keys()),
-        default=list(LEAGUES.keys()), metavar="LEAGUE",
-        help=f"Leagues: {list(LEAGUES.keys())}  (default: all)") 
+        "--leagues", nargs="+", choices=list(Leagues.keys()),
+        default=list(Leagues.keys()), metavar="LEAGUE",
+        help=f"Leagues: {list(Leagues.keys())}  (default: all)") 
     #Looks through each individual league and makes sure to only scrape valid leagues listed above 
 
     parser.add_argument(
-        "--seasons", nargs="+", type=int, default=SEASONS, metavar="YEAR",
-        help="Season START years --seasons 2020 2021  (2020 = 2020/21 campaign)")
-    #Only looks through the seasons listed in SEASONS variable above
+        "--seasons", nargs="+", type=int, default=Seasons, metavar="YEAR",
+        help="Season START years --seasons 2020 2021  (2020 = 2020/21 season)")
+    #Only looks through the seasons listed in Seasons variable above 
 
     return parser.parse_args()
+    #Make sure data is clean and not broken.
 
 
 
