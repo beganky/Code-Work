@@ -4,7 +4,7 @@ Understat Soccer Scraper — Final Version (2015-2023)
 Uses the understatapi package instead of raw requests (I made two separate scrapers before I came to this realization)
 which was awesome... anyways, the package handles Understat's bot protection and helped me pull my data from Understat's website.
 
-Running this from start to finish takes around 20 minutes just a quick heads up...
+Running this from start to finish takes around 10 minutes just a quick heads up...
 
 Where is everything supposedly saved...
 Output (saved to soccer_data/):
@@ -37,8 +37,7 @@ Leagues = {
     "EPL":         "Premier League",
     "Bundesliga":  "Bundesliga",
     "Serie_A":     "Serie A",
-    "Ligue_1":     "Ligue 1",
-    "La_liga":      "La liga"}
+    "Ligue_1":     "Ligue 1"}
     #I swear this should have been La Ligas
 #    "La_liga":     "La Liga" but it did not work despite that being the url 
 #https://understat.com/league/La_liga I swear that takes you right to the page... do not get me started.

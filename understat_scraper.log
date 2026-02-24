@@ -95,3 +95,132 @@
 2026-02-24 16:36:38,930 [ERROR] Failed for La_liga 2023/24: La_ligais not a valid league get back to work.
 2026-02-24 16:36:38,932 [ERROR] No player data collected. Go fish...
 2026-02-24 16:36:38,933 [ERROR] This is broken and no team data was collected. You successfully wasted your own time!!!
+2026-02-24 16:39:36,125 [INFO] ============================================================
+2026-02-24 16:39:36,127 [INFO] Understat Scraper — Players + Team Standings
+2026-02-24 16:39:36,127 [INFO] Leagues : ['EPL', 'Bundesliga', 'Serie_A', 'Ligue_1', 'La_liga']
+2026-02-24 16:39:36,127 [INFO] Seasons : ['2015/16', '2016/17', '2017/18', '2018/19', '2019/20', '2020/21', '2021/22', '2022/23', '2023/24']
+2026-02-24 16:39:36,127 [INFO] ============================================================
+2026-02-24 16:39:36,128 [INFO] [1/45] Premier League — 2015/16
+2026-02-24 16:39:36,941 [INFO]   Players : 550 rows
+2026-02-24 16:39:42,725 [INFO]   Teams   : 20 rows
+2026-02-24 16:39:47,725 [INFO] [2/45] Premier League — 2016/17
+2026-02-24 16:39:48,506 [INFO]   Players : 524 rows
+2026-02-24 16:39:54,266 [INFO]   Teams   : 20 rows
+2026-02-24 16:39:59,267 [INFO] [3/45] Premier League — 2017/18
+2026-02-24 16:40:00,225 [INFO]   Players : 515 rows
+2026-02-24 16:40:05,982 [INFO]   Teams   : 20 rows
+2026-02-24 16:40:10,983 [INFO] [4/45] Premier League — 2018/19
+2026-02-24 16:40:11,755 [INFO]   Players : 505 rows
+2026-02-24 16:40:17,508 [INFO]   Teams   : 20 rows
+2026-02-24 16:40:22,509 [INFO] [5/45] Premier League — 2019/20
+2026-02-24 16:40:23,266 [INFO]   Players : 515 rows
+2026-02-24 16:40:29,011 [INFO]   Teams   : 20 rows
+2026-02-24 16:40:34,012 [INFO] [6/45] Premier League — 2020/21
+2026-02-24 16:40:34,791 [INFO]   Players : 524 rows
+2026-02-24 16:40:40,565 [INFO]   Teams   : 20 rows
+2026-02-24 16:40:45,566 [INFO] [7/45] Premier League — 2021/22
+2026-02-24 16:40:46,353 [INFO]   Players : 537 rows
+2026-02-24 16:40:52,100 [INFO]   Teams   : 20 rows
+2026-02-24 16:40:57,102 [INFO] [8/45] Premier League — 2022/23
+2026-02-24 16:40:57,857 [INFO]   Players : 554 rows
+2026-02-24 16:41:03,676 [INFO]   Teams   : 20 rows
+2026-02-24 16:41:08,678 [INFO] [9/45] Premier League — 2023/24
+2026-02-24 16:41:09,443 [INFO]   Players : 570 rows
+2026-02-24 16:41:15,218 [INFO]   Teams   : 20 rows
+2026-02-24 16:41:20,219 [INFO] [10/45] Bundesliga — 2015/16
+2026-02-24 16:41:20,977 [INFO]   Players : 476 rows
+2026-02-24 16:41:26,728 [INFO]   Teams   : 18 rows
+2026-02-24 16:41:31,729 [INFO] [11/45] Bundesliga — 2016/17
+2026-02-24 16:41:32,487 [INFO]   Players : 470 rows
+2026-02-24 16:41:38,273 [INFO]   Teams   : 18 rows
+2026-02-24 16:41:43,275 [INFO] [12/45] Bundesliga — 2017/18
+2026-02-24 16:41:44,040 [INFO]   Players : 472 rows
+2026-02-24 16:41:49,805 [INFO]   Teams   : 18 rows
+2026-02-24 16:41:54,806 [INFO] [13/45] Bundesliga — 2018/19
+2026-02-24 16:41:55,554 [INFO]   Players : 468 rows
+2026-02-24 16:42:01,300 [INFO]   Teams   : 18 rows
+2026-02-24 16:42:06,301 [INFO] [14/45] Bundesliga — 2019/20
+2026-02-24 16:42:07,057 [INFO]   Players : 487 rows
+2026-02-24 16:42:12,818 [INFO]   Teams   : 18 rows
+2026-02-24 16:42:17,819 [INFO] [15/45] Bundesliga — 2020/21
+2026-02-24 16:42:18,588 [INFO]   Players : 496 rows
+2026-02-24 16:42:24,343 [INFO]   Teams   : 18 rows
+2026-02-24 16:42:29,344 [INFO] [16/45] Bundesliga — 2021/22
+2026-02-24 16:42:30,108 [INFO]   Players : 511 rows
+2026-02-24 16:42:35,887 [INFO]   Teams   : 18 rows
+2026-02-24 16:42:40,888 [INFO] [17/45] Bundesliga — 2022/23
+2026-02-24 16:42:41,650 [INFO]   Players : 506 rows
+2026-02-24 16:42:47,407 [INFO]   Teams   : 18 rows
+2026-02-24 16:42:52,409 [INFO] [18/45] Bundesliga — 2023/24
+2026-02-24 16:42:53,155 [INFO]   Players : 494 rows
+2026-02-24 16:42:58,907 [INFO]   Teams   : 18 rows
+2026-02-24 16:43:03,908 [INFO] [19/45] Serie A — 2015/16
+2026-02-24 16:43:04,675 [INFO]   Players : 551 rows
+2026-02-24 16:43:10,444 [INFO]   Teams   : 20 rows
+2026-02-24 16:43:15,445 [INFO] [20/45] Serie A — 2016/17
+2026-02-24 16:43:16,227 [INFO]   Players : 560 rows
+2026-02-24 16:43:22,005 [INFO]   Teams   : 20 rows
+2026-02-24 16:43:27,006 [INFO] [21/45] Serie A — 2017/18
+2026-02-24 16:43:27,784 [INFO]   Players : 533 rows
+2026-02-24 16:43:33,552 [INFO]   Teams   : 20 rows
+2026-02-24 16:43:38,553 [INFO] [22/45] Serie A — 2018/19
+2026-02-24 16:43:39,319 [INFO]   Players : 543 rows
+2026-02-24 16:43:45,112 [INFO]   Teams   : 20 rows
+2026-02-24 16:43:50,113 [INFO] [23/45] Serie A — 2019/20
+2026-02-24 16:43:50,880 [INFO]   Players : 572 rows
+2026-02-24 16:43:56,686 [INFO]   Teams   : 20 rows
+2026-02-24 16:44:01,687 [INFO] [24/45] Serie A — 2020/21
+2026-02-24 16:44:02,478 [INFO]   Players : 594 rows
+2026-02-24 16:44:08,376 [INFO]   Teams   : 20 rows
+2026-02-24 16:44:13,377 [INFO] [25/45] Serie A — 2021/22
+2026-02-24 16:44:14,231 [INFO]   Players : 608 rows
+2026-02-24 16:44:20,100 [INFO]   Teams   : 20 rows
+2026-02-24 16:44:25,101 [INFO] [26/45] Serie A — 2022/23
+2026-02-24 16:44:25,865 [INFO]   Players : 577 rows
+2026-02-24 16:44:31,626 [INFO]   Teams   : 20 rows
+2026-02-24 16:44:36,628 [INFO] [27/45] Serie A — 2023/24
+2026-02-24 16:44:37,397 [INFO]   Players : 590 rows
+2026-02-24 16:44:43,164 [INFO]   Teams   : 20 rows
+2026-02-24 16:44:48,165 [INFO] [28/45] Ligue 1 — 2015/16
+2026-02-24 16:44:48,938 [INFO]   Players : 575 rows
+2026-02-24 16:44:54,706 [INFO]   Teams   : 20 rows
+2026-02-24 16:44:59,708 [INFO] [29/45] Ligue 1 — 2016/17
+2026-02-24 16:45:00,477 [INFO]   Players : 559 rows
+2026-02-24 16:45:06,256 [INFO]   Teams   : 20 rows
+2026-02-24 16:45:11,257 [INFO] [30/45] Ligue 1 — 2017/18
+2026-02-24 16:45:12,041 [INFO]   Players : 540 rows
+2026-02-24 16:45:17,816 [INFO]   Teams   : 20 rows
+2026-02-24 16:45:22,817 [INFO] [31/45] Ligue 1 — 2018/19
+2026-02-24 16:45:23,609 [INFO]   Players : 548 rows
+2026-02-24 16:45:29,373 [INFO]   Teams   : 20 rows
+2026-02-24 16:45:34,373 [INFO] [32/45] Ligue 1 — 2019/20
+2026-02-24 16:45:35,157 [INFO]   Players : 531 rows
+2026-02-24 16:45:40,929 [INFO]   Teams   : 20 rows
+2026-02-24 16:45:45,930 [INFO] [33/45] Ligue 1 — 2020/21
+2026-02-24 16:45:45,937 [ERROR] Failed for Ligue_1 2020/21: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 16:45:45,937 [INFO] [34/45] Ligue 1 — 2021/22
+2026-02-24 16:45:46,957 [INFO]   Players : 589 rows
+2026-02-24 16:45:52,886 [INFO]   Teams   : 20 rows
+2026-02-24 16:45:57,887 [INFO] [35/45] Ligue 1 — 2022/23
+2026-02-24 16:45:57,894 [ERROR] Failed for Ligue_1 2022/23: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 16:45:57,894 [INFO] [36/45] Ligue 1 — 2023/24
+2026-02-24 16:45:58,736 [INFO]   Players : 525 rows
+2026-02-24 16:46:03,745 [ERROR] Failed for Ligue_1 2023/24: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 16:46:03,745 [INFO] [37/45] La liga — 2015/16
+2026-02-24 16:46:03,746 [ERROR] Failed for La_liga 2015/16: La_ligais not a valid league get back to work.
+2026-02-24 16:46:03,746 [INFO] [38/45] La liga — 2016/17
+2026-02-24 16:46:03,746 [ERROR] Failed for La_liga 2016/17: La_ligais not a valid league get back to work.
+2026-02-24 16:46:03,746 [INFO] [39/45] La liga — 2017/18
+2026-02-24 16:46:03,746 [ERROR] Failed for La_liga 2017/18: La_ligais not a valid league get back to work.
+2026-02-24 16:46:03,747 [INFO] [40/45] La liga — 2018/19
+2026-02-24 16:46:03,747 [ERROR] Failed for La_liga 2018/19: La_ligais not a valid league get back to work.
+2026-02-24 16:46:03,747 [INFO] [41/45] La liga — 2019/20
+2026-02-24 16:46:03,747 [ERROR] Failed for La_liga 2019/20: La_ligais not a valid league get back to work.
+2026-02-24 16:46:03,747 [INFO] [42/45] La liga — 2020/21
+2026-02-24 16:46:03,747 [ERROR] Failed for La_liga 2020/21: La_ligais not a valid league get back to work.
+2026-02-24 16:46:03,748 [INFO] [43/45] La liga — 2021/22
+2026-02-24 16:46:03,748 [ERROR] Failed for La_liga 2021/22: La_ligais not a valid league get back to work.
+2026-02-24 16:46:03,748 [INFO] [44/45] La liga — 2022/23
+2026-02-24 16:46:03,748 [ERROR] Failed for La_liga 2022/23: La_ligais not a valid league get back to work.
+2026-02-24 16:46:03,748 [INFO] [45/45] La liga — 2023/24
+2026-02-24 16:46:03,748 [ERROR] Failed for La_liga 2023/24: La_ligais not a valid league get back to work.
