@@ -40,9 +40,9 @@ Leagues = {
     "Serie_A":     "Serie A",
     "Ligue_1":     "Ligue 1"}
 
-#La_Liga even though that is the exact documentation name for it does not do anything but break this scraper, so I ignored that league and will work on it for future work
-#Here is the exact URL to the La Liga page, and no La_liga does not work either 
-#https://understat.com/league/La_liga 
+#Finally figured out how to get La Liga data, and it took looking at the documentation for the understatapi package
+#The way I was doing it would have been correct for scraping the website itself
+#Took a few hours of coders pose to figure this out
 
 #When do I want to collect
 Seasons = list(range(2015, 2024)) #These will be at the end of the url and represent the beginning year of the season
@@ -80,7 +80,7 @@ def build_players_df(raw: list, league: str, season: int) -> pd.DataFrame:
     keep = [
         "player", "team", "position", "games", "minutes", "goals", "assists",
         "shots", "key_passes", "yellow_cards", "red_cards", "non_penalty_goals",
-        "xg", "xa", "npxg", "xg_chain", "xg_buildup",]
+        "xg", "xa", "npxg", "xg_chain", "xg_buildup"]
     ugly_data = here_we_go[[c for c in keep if c in here_we_go.columns]]
 
     for col in Player_stat_cols:
