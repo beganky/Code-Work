@@ -1,12 +1,10 @@
 """
 Understat Soccer Scraper — Final Version (2015-2023)
 
+Uses the understatapi package instead of raw requests (I made five separate scrapers before I came to this realization)
+which was awesome... anyways, the package handles Understat's bot protection and helped me pull my data from Understat's website.
 
-Uses the understatapi package instead of raw requests (I made five separate scrapers before I came to this realization,
-which was awesome... anyways, the package handles Understat's bot protection and I pulled my data from Understat's website.
-
-What did I have to do that was 
-Install: pip install understatapi
+Running this from start to finish takes around 20 minutes just a quick heads up...
 
 Where is everything supposedly saved...
 Output (saved to soccer_data/):
@@ -226,7 +224,7 @@ def run_scraper(leagues: list, seasons: list) -> tuple:
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Scrape Understat player + team data into CSVs (2015-2025)"
+        description="Scrape Understat player + team data into CSVs (2015-2024)"
     )
     parser.add_argument(
         "--leagues", nargs="+", choices=list(Leagues.keys()),
@@ -247,10 +245,10 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
 
-    invalid = [s for s in args.seasons if s < 2015 or s > 2025] #SHOULD BREAK IF OUTSIDE OF THIS RANGE
+    invalid = [s for s in args.seasons if s < 2015 or s > 2024] #SHOULD BREAK IF OUTSIDE OF THIS RANGE
     if invalid:
         print(f"Warning: removing out-of-range seasons: {invalid}")
-        args.seasons = [s for s in args.seasons if 2015 <= s <= 2025] #Do not allow outside of range data into the set
+        args.seasons = [s for s in args.seasons if 2015 <= s <= 2024] #Do not allow outside of range data into the set
 
     if not args.seasons:
         print("No valid seasons. Exiting.")
