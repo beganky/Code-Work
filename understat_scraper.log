@@ -381,3 +381,104 @@
 2026-02-24 17:00:31,020 [ERROR] Failed for Ligue_1 2022/23: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
 2026-02-24 17:00:31,020 [INFO] [36/36] Ligue 1 — 2023/24
 2026-02-24 17:00:31,951 [INFO]   Players : 525 rows
+2026-02-24 17:02:41,418 [INFO] ============================================================
+2026-02-24 17:02:41,418 [INFO] Understat Scraper — Players + Team Standings
+2026-02-24 17:02:41,419 [INFO] Leagues : ['EPL', 'Bundesliga', 'Serie_A', 'Ligue_1']
+2026-02-24 17:02:41,419 [INFO] Seasons : ['2015/16', '2016/17', '2017/18', '2018/19', '2019/20', '2020/21', '2021/22', '2022/23', '2023/24']
+2026-02-24 17:02:41,419 [INFO] ============================================================
+2026-02-24 17:02:41,419 [INFO] [1/36] Premier League — 2015/16
+2026-02-24 17:02:42,385 [INFO]   Players : 550 rows
+2026-02-24 17:02:48,408 [INFO]   Teams   : 20 rows
+2026-02-24 17:02:53,409 [INFO] [2/36] Premier League — 2016/17
+2026-02-24 17:02:53,415 [ERROR] Failed for EPL 2016/17: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:02:53,416 [INFO] [3/36] Premier League — 2017/18
+2026-02-24 17:02:54,486 [INFO]   Players : 515 rows
+2026-02-24 17:03:00,496 [INFO]   Teams   : 20 rows
+2026-02-24 17:03:05,496 [INFO] [4/36] Premier League — 2018/19
+2026-02-24 17:03:06,541 [INFO]   Players : 505 rows
+2026-02-24 17:03:12,843 [INFO]   Teams   : 20 rows
+2026-02-24 17:03:17,845 [INFO] [5/36] Premier League — 2019/20
+2026-02-24 17:03:17,853 [ERROR] Failed for EPL 2019/20: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:03:17,853 [INFO] [6/36] Premier League — 2020/21
+2026-02-24 17:03:18,888 [INFO]   Players : 524 rows
+2026-02-24 17:03:23,895 [ERROR] Failed for EPL 2020/21: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:03:23,895 [INFO] [7/36] Premier League — 2021/22
+2026-02-24 17:03:24,971 [INFO]   Players : 537 rows
+2026-02-24 17:03:31,008 [INFO]   Teams   : 20 rows
+2026-02-24 17:03:36,009 [INFO] [8/36] Premier League — 2022/23
+2026-02-24 17:03:36,015 [ERROR] Failed for EPL 2022/23: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:03:36,015 [INFO] [9/36] Premier League — 2023/24
+2026-02-24 17:03:36,909 [INFO]   Players : 570 rows
+2026-02-24 17:03:41,916 [ERROR] Failed for EPL 2023/24: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:03:41,917 [INFO] [10/36] Bundesliga — 2015/16
+2026-02-24 17:03:42,891 [INFO]   Players : 476 rows
+2026-02-24 17:03:47,894 [ERROR] Failed for Bundesliga 2015/16: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:03:47,894 [INFO] [11/36] Bundesliga — 2016/17
+2026-02-24 17:03:48,951 [INFO]   Players : 470 rows
+2026-02-24 17:03:54,870 [INFO]   Teams   : 18 rows
+2026-02-24 17:03:59,872 [INFO] [12/36] Bundesliga — 2017/18
+2026-02-24 17:04:00,816 [INFO]   Players : 472 rows
+2026-02-24 17:04:06,777 [INFO]   Teams   : 18 rows
+2026-02-24 17:04:11,778 [INFO] [13/36] Bundesliga — 2018/19
+2026-02-24 17:04:11,784 [ERROR] Failed for Bundesliga 2018/19: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:04:11,784 [INFO] [14/36] Bundesliga — 2019/20
+2026-02-24 17:04:12,690 [INFO]   Players : 487 rows
+2026-02-24 17:04:17,693 [ERROR] Failed for Bundesliga 2019/20: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:04:17,693 [INFO] [15/36] Bundesliga — 2020/21
+2026-02-24 17:04:18,714 [INFO]   Players : 496 rows
+2026-02-24 17:04:23,723 [ERROR] Failed for Bundesliga 2020/21: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:04:23,724 [INFO] [16/36] Bundesliga — 2021/22
+2026-02-24 17:04:24,983 [INFO]   Players : 511 rows
+2026-02-24 17:04:31,013 [INFO]   Teams   : 18 rows
+2026-02-24 17:04:36,014 [INFO] [17/36] Bundesliga — 2022/23
+2026-02-24 17:04:36,018 [ERROR] Failed for Bundesliga 2022/23: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:04:36,018 [INFO] [18/36] Bundesliga — 2023/24
+2026-02-24 17:04:37,066 [INFO]   Players : 494 rows
+2026-02-24 17:04:42,937 [INFO]   Teams   : 18 rows
+2026-02-24 17:04:47,938 [INFO] [19/36] Serie A — 2015/16
+2026-02-24 17:04:47,943 [ERROR] Failed for Serie_A 2015/16: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:04:47,943 [INFO] [20/36] Serie A — 2016/17
+2026-02-24 17:04:48,947 [INFO]   Players : 560 rows
+2026-02-24 17:04:54,801 [INFO]   Teams   : 20 rows
+2026-02-24 17:04:59,802 [INFO] [21/36] Serie A — 2017/18
+2026-02-24 17:04:59,815 [ERROR] Failed for Serie_A 2017/18: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:04:59,815 [INFO] [22/36] Serie A — 2018/19
+2026-02-24 17:05:00,617 [INFO]   Players : 543 rows
+2026-02-24 17:05:06,519 [INFO]   Teams   : 20 rows
+2026-02-24 17:05:11,524 [INFO] [23/36] Serie A — 2019/20
+2026-02-24 17:05:11,530 [ERROR] Failed for Serie_A 2019/20: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:05:11,530 [INFO] [24/36] Serie A — 2020/21
+2026-02-24 17:05:12,700 [INFO]   Players : 594 rows
+2026-02-24 17:05:18,752 [INFO]   Teams   : 20 rows
+2026-02-24 17:05:23,754 [INFO] [25/36] Serie A — 2021/22
+2026-02-24 17:05:24,985 [INFO]   Players : 608 rows
+2026-02-24 17:05:30,848 [INFO]   Teams   : 20 rows
+2026-02-24 17:05:35,849 [INFO] [26/36] Serie A — 2022/23
+2026-02-24 17:05:35,856 [ERROR] Failed for Serie_A 2022/23: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:05:35,858 [INFO] [27/36] Serie A — 2023/24
+2026-02-24 17:05:36,819 [INFO]   Players : 590 rows
+2026-02-24 17:05:42,714 [INFO]   Teams   : 20 rows
+2026-02-24 17:05:47,715 [INFO] [28/36] Ligue 1 — 2015/16
+2026-02-24 17:05:47,721 [ERROR] Failed for Ligue_1 2015/16: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:05:47,721 [INFO] [29/36] Ligue 1 — 2016/17
+2026-02-24 17:05:48,750 [INFO]   Players : 559 rows
+2026-02-24 17:05:54,689 [INFO]   Teams   : 20 rows
+2026-02-24 17:05:59,690 [INFO] [30/36] Ligue 1 — 2017/18
+2026-02-24 17:06:00,506 [INFO]   Players : 540 rows
+2026-02-24 17:06:06,453 [INFO]   Teams   : 20 rows
+2026-02-24 17:06:11,455 [INFO] [31/36] Ligue 1 — 2018/19
+2026-02-24 17:06:11,461 [ERROR] Failed for Ligue_1 2018/19: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:06:11,461 [INFO] [32/36] Ligue 1 — 2019/20
+2026-02-24 17:06:12,524 [INFO]   Players : 531 rows
+2026-02-24 17:06:18,548 [INFO]   Teams   : 20 rows
+2026-02-24 17:06:23,549 [INFO] [33/36] Ligue 1 — 2020/21
+2026-02-24 17:06:24,564 [INFO]   Players : 575 rows
+2026-02-24 17:06:30,534 [INFO]   Teams   : 20 rows
+2026-02-24 17:06:35,536 [INFO] [34/36] Ligue 1 — 2021/22
+2026-02-24 17:06:36,496 [INFO]   Players : 589 rows
+2026-02-24 17:06:42,525 [INFO]   Teams   : 20 rows
+2026-02-24 17:06:47,526 [INFO] [35/36] Ligue 1 — 2022/23
+2026-02-24 17:06:48,584 [INFO]   Players : 585 rows
+2026-02-24 17:06:54,481 [INFO]   Teams   : 20 rows
+2026-02-24 17:06:59,482 [INFO] [36/36] Ligue 1 — 2023/24
+2026-02-24 17:06:59,488 [ERROR] Failed for Ligue_1 2023/24: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
