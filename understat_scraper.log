@@ -358,3 +358,26 @@
 2026-02-24 16:59:26,375 [INFO]   Teams   : 20 rows
 2026-02-24 16:59:31,376 [INFO] [27/36] Serie A — 2023/24
 2026-02-24 16:59:32,423 [INFO]   Players : 590 rows
+2026-02-24 16:59:38,313 [INFO]   Teams   : 20 rows
+2026-02-24 16:59:43,314 [INFO] [28/36] Ligue 1 — 2015/16
+2026-02-24 16:59:44,376 [INFO]   Players : 575 rows
+2026-02-24 16:59:50,151 [INFO]   Teams   : 20 rows
+2026-02-24 16:59:55,152 [INFO] [29/36] Ligue 1 — 2016/17
+2026-02-24 16:59:55,157 [ERROR] Failed for Ligue_1 2016/17: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 16:59:55,157 [INFO] [30/36] Ligue 1 — 2017/18
+2026-02-24 16:59:56,003 [INFO]   Players : 540 rows
+2026-02-24 17:00:01,817 [INFO]   Teams   : 20 rows
+2026-02-24 17:00:06,818 [INFO] [31/36] Ligue 1 — 2018/19
+2026-02-24 17:00:06,824 [ERROR] Failed for Ligue_1 2018/19: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:00:06,825 [INFO] [32/36] Ligue 1 — 2019/20
+2026-02-24 17:00:08,372 [INFO]   Players : 531 rows
+2026-02-24 17:00:14,305 [INFO]   Teams   : 20 rows
+2026-02-24 17:00:19,307 [INFO] [33/36] Ligue 1 — 2020/21
+2026-02-24 17:00:19,316 [ERROR] Failed for Ligue_1 2020/21: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:00:19,317 [INFO] [34/36] Ligue 1 — 2021/22
+2026-02-24 17:00:20,144 [INFO]   Players : 589 rows
+2026-02-24 17:00:26,012 [INFO]   Teams   : 20 rows
+2026-02-24 17:00:31,014 [INFO] [35/36] Ligue 1 — 2022/23
+2026-02-24 17:00:31,020 [ERROR] Failed for Ligue_1 2022/23: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) get back to work.
+2026-02-24 17:00:31,020 [INFO] [36/36] Ligue 1 — 2023/24
+2026-02-24 17:00:31,951 [INFO]   Players : 525 rows
