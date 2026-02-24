@@ -41,7 +41,7 @@ Leagues = {
 
     #I swear this should have been La Ligas
 #    "La_Liga":     "La Liga" but it did not work despite that being the url 
-#https://understat.com/league/La_liga 
+#https://understat.com/league/La_liga I swear that takes you right to the page... do not get me started.
 #I spent five days trying to pull data from the 2014 season in the Premier League and figured out that xG and xA data did not exist back then... please do not ask how awesome I felt figuring that out
 #La Liga (Spain's first division) is also not included, because the scraper kept breaking or claiming the pages did not exist... even though I was staring at them in my browser
 
