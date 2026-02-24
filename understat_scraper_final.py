@@ -99,7 +99,8 @@ def build_players_df(raw: list, league: str, season: int) -> pd.DataFrame:
     data["league"] = LEAGUES[league]
     data["season"] = f"{season}/{str(season + 1)[-2:]}"
 
-    data = data[data["minutes"] > 0].reset_index(drop=True) #Get rid of the bums (they are miles better than me in every facet of soccer) who did not play during the given season
+    data = data[data["minutes"] > 0].reset_index(drop=True) #Get rid of the bums who did not play during the given season
+    #Let me be clear they are miles better than me.
     front = ["season", "league", "player", "team", "position"]
     rest  = [c for c in data.columns if c not in front]
     return data[front + rest]
