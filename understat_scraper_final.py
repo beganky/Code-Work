@@ -39,6 +39,9 @@ Leagues = {
     "Serie_A":     "Serie A",
     "Ligue_1":     "Ligue 1"}
 
+    #I swear this should have been La Ligas
+#    "La_Liga":     "La Liga" but it did not work despite that being the url 
+#https://understat.com/league/La_liga 
 #I spent five days trying to pull data from the 2014 season in the Premier League and figured out that xG and xA data did not exist back then... please do not ask how awesome I felt figuring that out
 #La Liga (Spain's first division) is also not included, because the scraper kept breaking or claiming the pages did not exist... even though I was staring at them in my browser
 
@@ -50,7 +53,8 @@ Output_spot = Path("soccer_data")
 Output_spot.mkdir(exist_ok=True)
 
 REQUEST_DELAY = 5   #Seconds between requests so I do not get blocked by Understat's bot 
-#Huge pain in the butt btw. They blocked me for having this at 3, so I stuck with 5... bc it worked... 
+#Huge pain in the butt btw especially after my nightmare trying to dance around CloudFlare 
+#Understat blocked me for having this at 3, so I stuck with 5... bc it worked... 
 
 #Player data
 Player_cols = {
@@ -62,13 +66,13 @@ Player_cols = {
     "xG":          "xg", #Expected goals
     "xA":          "xa", #Expected assits 
     "xGChain":     "xg_chain", 
-    "xGBuildup":   "xg_buildup",} #Last two measure how involved a given player is in the build up to a shot
+    "xGBuildup":   "xg_buildup"} #Last two measure how involved a given player is in the build up to a shot
 
 #Columns of numeric data, which will be converted to numeric types for calculations (per 90 stats)
 Player_stat_cols = [
     "games", "minutes", "goals", "assists", "shots", "key_passes",
     "yellow_cards", "red_cards", "non_penalty_goals",
-    "xg", "xa", "npxg", "xg_chain", "xg_buildup",]
+    "xg", "xa", "npxg", "xg_chain", "xg_buildup"]
 
 #What do I want to find in the player data and what am I keeping (save to .csv later)
 def build_players_df(raw: list, league: str, season: int) -> pd.DataFrame:
@@ -133,7 +137,7 @@ def build_teams_df(raw: dict, league: str, season: int) -> pd.DataFrame:
             "points":         wins * 3 + draws, #3 pts for a win & 1 pt for a draw (not sure if that is common knowledge, but just in case...)
             "xg":             round(xg,  2), #Round so these are not disgusting to look at 
             "xga":            round(xga, 2),
-            "xg_diff":        round(xg - xga, 2),}) 
+            "xg_diff":        round(xg - xga, 2)}) 
 
 #Build the dataframe and let's see if it is empty (that will be so upsetting)
     clean_data = pd.DataFrame(rows)
