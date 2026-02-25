@@ -4,7 +4,7 @@ Understat Soccer Scraper — Final Version (2015-2023)
 Uses the understatapi package instead of raw requests (I made two separate scrapers before I came to this realization)
 which was awesome... anyways, the package handles Understat's bot protection and helped me pull my data from Understat's website.
 
-Running this from start to finish takes around 10 minutes just a quick heads up...
+Running this from start to finish takes around 10 - 15 minutes just a quick heads up...
 
 Where is everything supposedly saved...
 Output (saved to soccer_data/):
@@ -53,7 +53,7 @@ Output_spot.mkdir(exist_ok=True)
 
 REQUEST_DELAY = 12   #Seconds between requests so I do not get blocked by Understat's bot 
 #Huge pain in the butt btw especially after my nightmare trying to dance around CloudFlare 
-#Understat blocked me for having this at 3 & 5, so I stuck with 12... bc it worked... 
+#Understat blocked me for having this at 3 & 5, so I stuck with 12... bc it worked...
 
 #Player data
 Player_cols = {
@@ -61,6 +61,7 @@ Player_cols = {
     "team_title":  "team",
     "time":        "minutes", 
     "npg":         "non_penalty_goals", #Scoring in the 'run of play'
+    #Gets rid of penalty kick merchant stat padding 
     "npxG":        "npxg", #Non-penalty expected goals
     "xG":          "xg", #Expected goals
     "xA":          "xa", #Expected assits 
@@ -165,7 +166,7 @@ def run_scraper(leagues: list, seasons: list) -> tuple:
     total = len(leagues) * len(seasons)
     done  = 0
 
-    #I LOOKED THIS UP I HAD NO CLUE WHAT I WAS DOING AND WAS TIRED OF GETTING BLOCKED FROM SCRAPING
+    #I LOOKED UP THIS PACKAGE AS I HAD NO CLUE WHAT I WAS DOING AND WAS TIRED OF GETTING BLOCKED FROM SCRAPING
     understat = UnderstatClient()
 #Let's me pull the data for each league and then build my dataframes (understat has a specific function when scraping their website)
 
@@ -183,7 +184,7 @@ def run_scraper(leagues: list, seasons: list) -> tuple:
                     player_frames.append(df)
                     log.info(f"  Players : {len(df):,} rows")
                 else:
-                    log.warning(f"Uh oh no player data returned. Crud...")
+                    log.warning(f"Uh oh. No player data returned. Crud...")
 
                 time.sleep(REQUEST_DELAY)
 
@@ -208,6 +209,7 @@ def run_scraper(leagues: list, seasons: list) -> tuple:
         path = Output_spot / "player_scraped_data.csv"
         all_players.to_csv(path, index=False)
         log.info(f"\n IT WORKED! player_scraped_data.csv — {len(all_players):,} rows → {path}")
+        #Tell me it worked and how many rows were gathered
     else:
         all_players = pd.DataFrame()
         log.error("No player data collected. Go fish...")
@@ -217,6 +219,7 @@ def run_scraper(leagues: list, seasons: list) -> tuple:
         path = Output_spot / "understat_teams_data.csv"
         all_teams.to_csv(path, index=False)
         log.info(f"\n IT WORKED!! understat_teams_data.csv   — {len(all_teams):,} rows → {path}")
+        #Say it worked and say how many teams were found
     else:
         all_teams = pd.DataFrame()
         log.error("This is broken and no team data was collected. You successfully wasted your own time!!!")
@@ -245,7 +248,7 @@ def parse_args():
     #Make sure data is clean and not broken.
 
 
-
+#Arguments to make sure data is clean and within the range specified
 if __name__ == "__main__":
     args = parse_args()
 
