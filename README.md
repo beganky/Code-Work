@@ -11,6 +11,7 @@ I also wanted to collect team data in order to see who were the best performing 
 
 ## Quick Note
 2015/2016 was the season that advanced statistics such as xG & xA were recorded (xG: Expected goal rate & xA: Expected assist rate)
+Here is a solid link to a Sky Sports article that discusses a lot of advanced statistics: https://www.skysports.com/football/news/11095/12829539/expected-goals-expected-assists-pressures-carries-high-turnovers-and-more-advanced-stats-explained 
 That means that if you attempt to collect 2014/2015 data my scraper will ignore that year and chug along to the next season. However, the scraper will allow you to pull through all seasons before.
 If you collect any data before 2015 all the columns with xG, xA, xDF (expected goal differential) will be empty and you would not be able to do any analysis at all. 
 So let me reiterate... you can collect data before the 2015/2016 season, but ALL of the per 90 stats that I have created will be totally empty and make it impossible to compare to the active data.
@@ -22,15 +23,16 @@ I was able to collect that data through quite a let's call it a fun process wher
 
 
 ## Issues
-Orignially, I attempted to scrape FBRef, but they use CloudFlare and holy moly they do not play around when it comes to people attempting to scrape their website. I had to pivot to Understat, but they have very similar stats that were on FBRef. I had an issue with scraping the La Liga data, but after reading through documentation I learned how to scrape through the Understat data package 
+Orignially, I attempted to scrape FBRef, but they use CloudFlare and holy moly they do not play around when it comes to people attempting to scrape their website. I had to pivot to Understat, but they have very similar stats that were on FBRef. I had an issue with scraping the La Liga data, but after reading through documentation I learned how to scrape through the Understat data package to gather each league's data. 
 
 
 ## Future Work
 I want to build another scraper that will pull individual player contract data so that I can attempt to create a model that determines when players should be paid. 
 I would love to have a model that can predict overpays from clubs solely by looking at recent players who have performed similar and see how they did in comparison to their contract valuation. 
 That model would be able to assist clubs in finding when they should lock down a player to a long term contract and save money in the long run or should they take a gamble for a player who has been playing below expectations. 
-'Smaller' clubs, such as my personal favorite West Ham United, struggle to keep young emerging start players with potential as the 'big boys' like Arsenal, Real Madrid, Man City, etc. who can throw huge contracts at multiple players per transfer window and just hope that one of them turns out to be a fit in their system. I want to try and create a model that predicts when a player is being underpaid by their current club so that teams like West Ham can go scout another striker (who inevitably flops) and sign them on a club friendly deal (our billionare owners [yes you read that right billion with a b] are much too cheap to just throw money into the air...) so that the club can invest funds into other areas of need. 
+'Smaller' clubs, such as my personal favorite West Ham United, struggle to keep young emerging start players with potential as the 'big boys' like Arsenal, Real Madrid, Man City, etc. who can throw huge contracts at multiple players per transfer window and just hope that one of them turns out to be a fit in their system. I want to try and create a model that predicts when a player is being underpaid by their current club so that teams like West Ham can go scout another striker (who inevitably flops) and sign them on a club friendly deal (our billionare owners [yes you read that right billion with a b] are much too cheap to just 'throw money into the air'... aka investing in the club they went out of their way to purchase) so that the club can invest funds into other areas of need. 
 Finally, I think if I could weigh each league based on how effective clubs from leagues are at continental I would be able to give players stats a better comparison to one another. As styles will vary from league to league and players transferring in will have to adapt to that new style. In the age of data and film, coaches will adapt play styles from game to game, so a general comparison of league to league would help me compare stats of a 33 year old Premier League (England's first division) veteran to a 19 year old playing in Serie B (Italy's second division) and see who would be worth offering a new deal to.
+
 
 
 
